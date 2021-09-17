@@ -1,0 +1,24 @@
+.searchContainer__filter__block{
+    top: 12.5%;
+    left: 0;
+    width: 50%;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.searchContainer__filter__block__list{
+    background-color: white;
+}
+.searchContainer__filter__block__list li{
+    padding-bottom: 10px;
+    outline: 0.1px solid #000;
+    cursor: pointer;
+}
+
+.searchContainer__filter__block__list li:hover{
+    background-color: #61dafb;
+}

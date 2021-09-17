@@ -1,0 +1,27 @@
+.header{
+   background: #1e1f29;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+    .header{
+        display: none;
+    }
+}
+
+.container__header{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 96%; 
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navigation{
+    background-color: #15161d
+}
+
+

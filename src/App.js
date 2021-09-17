@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import HeaderContainer from "./components/header/HeaderContainer";
+import ContainerCollections from "./components/Collections/ContainerCollections";
+import { Route } from "react-router";
+import ContainerLaptops from "./components/Laptops/ContainerLaptops";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <div className="container__header">
+        <HeaderContainer />
+      </div>
+      <div className="App_header">
+        <div className="App">
+          <div className="Collection">
+
+          </div>
+        </div>
+        <div>
+          <Route path="/laptops" render={() => <ContainerLaptops />} />
+        </div>
+      </div>
     </div>
   );
 }

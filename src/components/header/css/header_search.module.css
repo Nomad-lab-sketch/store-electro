@@ -1,0 +1,132 @@
+.searchContainer{
+    display: flex;
+    transition: 1s;
+    animation: 1s;
+}
+
+@media screen and (max-width: 640px){
+    .searchContainer{
+        display: none;
+    }
+}
+
+.searchContainer__filter{
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 40px 0px 0px 40px;
+    border: 1px solid #E4E7ED;
+    height: 42px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #474747;
+    cursor: pointer;
+    align-items: center;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.active__filter{
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #E4E7ED;
+}
+
+.triangle{
+    transition: 0.4s;
+    padding-left: 5px;
+}
+
+.active__filter__arrow {
+    transform: rotateX(180deg);
+}
+
+.searchContainer input {
+    height: 40px;
+    padding: 0px 15px;
+    border: 1px solid #E4E7ED;
+    background-color: #FFF;
+    width: 300px;
+}
+.searchContainer__button{
+    height: 42px;
+    width: 100px;
+    background: #D10024;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    font-weight:bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.searchContainer__button:hover{
+   opacity: 0.92;
+}
+
+ .searchContainer__loop{
+    display: none;
+}
+@media screen and (max-width: 640px){
+
+    .searchContainer__loop{
+        display: flex;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        flex-direction: column;
+        transition: .2s;
+        margin-right: 10px;
+    }
+
+    .searchContainer__loop:hover{
+        color: #D10024;
+    }
+
+    .loop{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        align-items: center;
+        padding-bottom: 4px;
+    }
+
+    .loop__search{
+        margin-top: 50px;
+        transition: 1s;
+    }
+
+    .loop__search ul{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 25px;
+    }
+
+    .loop__search ul li{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        outline: 2px solid #a3a3a3;
+    }
+
+    .loop__search ul li:hover{
+       color: #D10024;
+    }
+
+    .loop__close{
+        margin-left: 110px;
+    }
+
+    .loop__close:hover{
+        color: #D10024;
+    }
+
+   .active__search{
+       position: absolute;
+       display: flex;
+       flex-direction: row;
+   }
+
+}
